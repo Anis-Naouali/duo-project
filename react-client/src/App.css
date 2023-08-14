@@ -1,0 +1,267 @@
+.nav {
+  background-color: #6e0378;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #F3F3F3;
+}
+.logo {
+  font-size: 26px;
+  margin-right: auto;
+  margin-left: 10px;
+  color: #f3f3f3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.logo:hover{
+  cursor: pointer;
+}
+
+.items {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  margin-right: 50px;
+  font-size: 23px;
+  padding: 6px;
+}
+.items:hover {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-right: 50px;
+  font-size: 23px;
+  background-color: #000000;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 6px;
+ 
+}
+.search {
+    height: 38px;
+    width: 400px;
+    border-radius: 11px;
+    border: transparent;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.searchForm{
+  margin-right: 20%;
+}
+.searchButton{
+  height: 42px;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  width:47px;
+  border: transparent;
+  background-color: black;
+  font-size: 15px;
+}
+.searchButton:hover{
+  height: 42px;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  width:47px;
+  cursor: pointer;
+}
+.menu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 6px;
+  width: 160px;
+  height: 200px;
+  margin-left: 80%;
+  justify-content: space-evenly;
+  z-index: 1;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  align-items: center;
+  background-color: white;
+}
+.menu-item{
+  font-size: 22px;
+  border-bottom: 1px solid black;
+  font-size: bolder;
+  width:100%;
+  padding: 4px;
+  margin-left: 6px;
+}
+.menu-item:hover{
+  font-size: 25px;
+
+  font-size: bolder;
+  color:white;
+  background-color:rgb(0, 0, 0);
+  padding:5px;
+  cursor: pointer;
+
+}
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+.product-card img:hover {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card-buttons button {
+  background-color: #6e0378;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.product-card-buttons button:hover {
+  background-color: black;
+  color :white
+}
+.products-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 12px;
+    justify-content: space-around;
+}
+.card-item-price{
+  font-size: 30px;
+  font-weight: bold;
+  color:green
+}
+.card-item-cat{
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(0, 6, 128)
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 1rem;
+  margin-top: 3%;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+  height:40px
+}
+.cart-item:hover{
+  color :white;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.cart-item span {
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 20px;
+  color: green;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #6e0378;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+.cart-list-button:hover{
+  background-color: white;
+  color:black
+}
+
+.product-details {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: 6%;
+    border: 2px solid black;
+    padding: 125px;
+    border-radius: 13px;
+ 
+}
+
+.product-image {
+  margin-right: 50px;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: 350px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.product-info h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.product-info p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.product-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
