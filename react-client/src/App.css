@@ -171,6 +171,16 @@
   margin-top: 12px;
   justify-content: space-around;
 }
+.products-details {
+  width:auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-top: 12px;
+  justify-content: space-around;
+}
 
 .card-item-price {
   font-size: 30px;
