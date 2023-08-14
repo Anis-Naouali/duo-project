@@ -2,14 +2,13 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 const productSchema = new mongoose.Schema({
     name: String,
+    price:String,
     description: String,
-    imageUrl: String,
-    price:Number,
-    category: {
+    categories: {
       type: String,
-      enum: ["whey", "mass gainer", "pre workout"],
-
-    }
+      enum: ["whey", "mass gainer", "pre workout"],     
+    },
+    imageUrl: String
   });
   
 const Product = mongoose.model("Product", productSchema);

@@ -1,5 +1,5 @@
 .nav {
-  background-color: #6e0378;
+  background-color:rgb(244,214,3);
   margin: 0px;
   padding: 10px;
   display: flex;
@@ -7,26 +7,31 @@
   align-items: center;
   color: #F3F3F3;
 }
+
 .logo {
+  width: 80px;
+  width: 80px;
   font-size: 26px;
   margin-right: auto;
   margin-left: 10px;
-  color: #f3f3f3;
+  color: black;
   font-weight: bold;
   text-decoration: underline;
 }
-.logo:hover{
+
+.logo:hover {
   cursor: pointer;
 }
 
 .items {
   padding: 5px;
-  color: white;
+  color: black;
   font-weight: bold;
   margin-right: 50px;
   font-size: 23px;
   padding: 6px;
 }
+
 .items:hover {
   padding: 5px;
   color: rgb(255, 255, 255);
@@ -37,39 +42,45 @@
   cursor: pointer;
   border-radius: 14px;
   padding: 6px;
- 
+
 }
+
 .search {
-    height: 38px;
-    width: 400px;
-    border-radius: 11px;
-    border: transparent;
-    text-align: center;
-    font-size: 18px;
-    margin-right: 1px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+  height: 38px;
+  width: 400px;
+  border-radius: 11px;
+  border: transparent;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 1px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
-.searchForm{
+
+.searchForm {
   margin-right: 20%;
 }
-.searchButton{
+
+.searchButton {
+  
   height: 42px;
   border-top-right-radius: 11px;
   border-bottom-right-radius: 11px;
-  width:47px;
+  width: 47px;
   border: transparent;
   background-color: black;
   font-size: 15px;
 }
-.searchButton:hover{
+
+.searchButton:hover {
   height: 42px;
   border-top-right-radius: 11px;
   border-bottom-right-radius: 11px;
-  width:47px;
+  width: 47px;
   cursor: pointer;
 }
-.menu{
+
+.menu {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -86,24 +97,27 @@
   align-items: center;
   background-color: white;
 }
-.menu-item{
+
+.menu-item {
   font-size: 22px;
   border-bottom: 1px solid black;
   font-size: bolder;
-  width:100%;
+  width: 100%;
   padding: 4px;
   margin-left: 6px;
 }
-.menu-item:hover{
+
+.menu-item:hover {
   font-size: 25px;
 
   font-size: bolder;
-  color:white;
-  background-color:rgb(0, 0, 0);
-  padding:5px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
   cursor: pointer;
 
 }
+
 .product-card {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -117,6 +131,7 @@
   max-width: 100%;
   height: auto;
 }
+
 .product-card img:hover {
   max-width: 100%;
   height: auto;
@@ -145,25 +160,28 @@
 
 .product-card-buttons button:hover {
   background-color: black;
-  color :white
+  color: white
 }
+
 .products-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-    margin-top: 12px;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-top: 12px;
+  justify-content: space-around;
 }
-.card-item-price{
+
+.card-item-price {
   font-size: 30px;
   font-weight: bold;
-  color:green
+  color: green
 }
-.card-item-cat{
+
+.card-item-cat {
   font-size: 30px;
   font-weight: bold;
-  color:rgb(0, 6, 128)
+  color: rgb(0, 6, 128)
 }
 
 .cart-list {
@@ -185,10 +203,11 @@
   padding: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid gray;
-  height:40px
+  height: 40px
 }
-.cart-item:hover{
-  color :white;
+
+.cart-item:hover {
+  color: white;
   background-color: #000000;
   cursor: pointer;
 }
@@ -216,22 +235,23 @@ button:hover {
   background-color: black;
   color: white;
 }
-.cart-list-button:hover{
+
+.cart-list-button:hover {
   background-color: white;
-  color:black
+  color: black
 }
 
 .product-details {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1000px;
-    margin-top: 6%;
-    border: 2px solid black;
-    padding: 125px;
-    border-radius: 13px;
- 
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 6%;
+  border: 2px solid black;
+  padding: 125px;
+  border-radius: 13px;
+
 }
 
 .product-image {
@@ -265,3 +285,70 @@ button:hover {
   margin-bottom: 30px;
 }
 
+.card {
+  margin-bottom: 30px;
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+
+}
+
+.card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: rgb(244,214,3);
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.card .job {
+  font-weight: 400;
+  color: black;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 18px;
+}
+
+.card .img {
+
+  text-align: center;
+  margin: auto;
+  display: flex;
+  max-width: 60%;
+  height: auto;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background:rgb(244,214,3);
+  color: black;
+  font-weight: 600;
+}
+
+.card button:hover {
+  background: white;
+}
+
+.products-list {
+  margin-bottom: 50px;
+}
