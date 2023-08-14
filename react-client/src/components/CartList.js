@@ -1,26 +1,33 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 
-const CartList = () => {
+const CartList = (props) => {
+
+  const [data, setData] = useState([]);
+  const [trigger,setTrigger] = useState(false)
+  useEffect(() => {
+  setData(props.cartData);
+  }, [trigger]);
+
+  // var sum = data.reduce((acc,e)=>acc+(e.price),0)
+
+
   return (
     <div className='cart-list'>
   <h1>My cart</h1>
-  <div className='cart-item'>
-    <span>Product Name: Iphone</span>
-    <span>Price: 100$</span>
-    <button className='cart-list-button'>Remove</button>
+
+  {data.map((e,i)=> {
+    return <div className='cart-item'>
+    <span>Product Name: {e.name}</span>
+    <span>Price: {e.price}</span>
+    <button className='cart-list-button' onClick={()=>{props.removeCart(i) 
+    setTrigger(!trigger)}
+    }>Remove</button>
   </div>
-  <div className='cart-item'>
-    <span>Product Name: pc</span>
-    <span>Price: 100$</span>
-    <button className='cart-list-button'>Remove</button>
-  </div>
-  <div className='cart-item'>
-    <span>Product Name: machine</span>
-    <span>Price: 100$</span>
-    <button className='cart-list-button'>Remove</button>
-  </div>
-  <h3>Total: 300$</h3>
-  <button >checkout</button>
+  })}
+  
+  <h3>Total: 0DT </h3>
+  <button onClick={()=> {props.empty()
+  setTrigger(!trigger)}}>checkout</button>
 </div>
   )
 }
