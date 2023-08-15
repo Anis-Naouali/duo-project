@@ -8,7 +8,7 @@ const CartList = (props) => {
   setData(props.cartData);
   }, [trigger]);
 
-  // var sum = data.reduce((acc,e)=>acc+(e.price),0)
+  var sum = data.reduce((acc,e)=>acc+(e.price),0)
 
 
   return (
@@ -25,7 +25,7 @@ const CartList = (props) => {
   </div>
   })}
   
-  <h3>Total: 0DT </h3>
+  <h3>Total: {sum}DT </h3>
   <button onClick={()=> {props.empty()
   setTrigger(!trigger)}}>checkout</button>
 </div>
@@ -33,3 +33,4 @@ const CartList = (props) => {
 }
 
 export default CartList
+

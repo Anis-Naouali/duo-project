@@ -11,9 +11,8 @@ const ProductDetails = (props) => {
                 </div>
                 <span> {props.details.name}</span>
                 <p class="job"> {props.details.description}</p>
-                <p class="job"> {props.details.price}</p>
-                <p class="job"> {props.details.categories}</p>
-                <button>Add to cart</button>
+                <p class="job"> {props.details.price} DT</p>
+                <button onClick={()=>props.cartFunc(props.details)}>Add to cart</button>
               </div>  
         </div>
       );
