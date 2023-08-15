@@ -46,7 +46,14 @@ const App = () => {
   };
 
   const emptyCart = () => {
-    setCart([]);
+    if (cart.length !== 0) {
+      setCart([]);
+      alert("Thank you for buying")
+    } else {
+      alert("Cart is empty ! Go shop")
+      switchView("productList")
+    }
+
   };
   const removeCart = (index) => {
     var newState = [...cart];
@@ -156,7 +163,25 @@ const App = () => {
         />
         <span className="logo"></span>
         {view === "productList" && <Search search={search} />}
+        {view === "productList" &&
+          <div class="radio-input">
+            <p className="ppp">Gainer</p>
 
+            <input value="value-1" name="value-radio" id="value-1" type="radio" onClick={() => { setData(gainer) }} />
+            <div class="plus1">
+              <div class="plus2"></div>
+            </div>
+            <p className="ppp">Whey</p>
+            <input value="value-2" name="value-radio" id="value-2" type="radio" onClick={() => { setData(whey) }} />
+            <div class="plus1">
+              <div class="plus2"></div>
+            </div>
+            <p className="ppp">Preworkout</p>
+            <input value="value-3" name="value-radio" id="value-3" type="radio" onClick={() => { setData(preworkout) }} />
+            <div class="plus1">
+              <div class="plus2"></div>
+            </div>
+          </div>}
         {view !== "login" &&
           view !== "addproduct" &&
           view !== "updateproject" &&
@@ -189,7 +214,7 @@ const App = () => {
         <ProductsList detail={detail} data={data} cartFunc={cartFunc} />
       )}
       {view === "cart" && (
-        <CartList cartData={cart} empty={emptyCart} removeCart={removeCart} switchView={switchView}/>
+        <CartList cartData={cart} empty={emptyCart} removeCart={removeCart} switchView={switchView} />
       )}
       {view === "ProductDetails" && (
         <ProductDetails cartFunc={cartFunc} details={details} />

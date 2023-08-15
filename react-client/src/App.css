@@ -1,3 +1,4 @@
+
 .nav {
   background-color:rgb(244,214,3);
   margin: 0px;
@@ -127,7 +128,7 @@
 }
 
 .product-card-buttons button {
-  background-color: #6e0378;
+  background-color: yellow;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -211,7 +212,7 @@ h3 {
 
 button {
   padding: 10px 20px;
-  background-color: #6e0378;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -465,7 +466,7 @@ button:hover {
   color: white;
 }
 
-#back_button {
+/* #back_button {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -497,9 +498,238 @@ button:hover {
  #back_button:hover {
   box-shadow: 9px 9px 33px black, -9px -9px 33px black;
   transform: translateY(-2px);
- }
+ } */
+
+
+ #back_button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 3em;
+  width: 80px;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: black;
+  margin: 0 630px; /* Center horizontally */
+}
+
+
+#back_button:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+#back_button:hover {
+  box-shadow: 9px 9px 33px black, -9px -9px 33px black;
+  transform: translateY(-2px);
+}
+
 
 
 
  /* delete button */
- 
+ .title{
+  margin-bottom: 5vh;
+}
+
+.card0{
+  text-align: center;
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+@media(max-width:767px){
+  .card0{
+      margin: 3vh auto;
+  }
+}
+
+.cart99{
+  background-color: #fff;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+
+@media(max-width:767px){
+  .cart99{
+      padding: 4vh;
+      border-bottom-left-radius: unset;
+      border-top-right-radius: 1rem;
+  }
+}
+
+
+.summary99{
+  background-color: #ddd;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+  color: rgb(65, 65, 65);
+}
+@media(max-width:767px){
+  .summary99{
+  border-top-right-radius: unset;
+  border-bottom-left-radius: 1rem;
+  }
+}
+.summary99 .col-2{
+  padding: 0;
+}
+
+.row99{
+  margin: 0;
+}
+
+.main99{
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%;
+}
+
+#code{
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}
+
+
+.col-2, .col99{
+  padding: 0 1vh;
+}
+
+
+.img-fluid{
+  width: 15rem;
+}
+
+.back-to-shop{
+  margin-top: 4.5rem;
+}
+
+h5{
+  margin-top: 4vh;
+}
+hr{
+  margin-top: 1.25rem;
+}
+
+select{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+#code{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+#code:focus::-webkit-input-placeholder
+{
+      color:transparent;
+}
+
+.btn99{
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
+}
+.btn99:focus{
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  -webkit-box-shadow: none;
+  -webkit-user-select: none;
+  transition: none; 
+}
+.btn99:hover{
+  color: white;
+}
+
+
+
+
+
+
+.radio-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-input input {
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  border-radius: 5px;
+  transition: .4s ease-in-out;
+}
+
+.radio-input input:hover {
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.radio-input .plus1 {
+  position: relative;
+  top: 0.08em;
+  left: -1.65em;
+  width: 1.3em;
+  height: 0.2em;
+  background-color:rgb(244,214,3);
+  rotate: 45deg;
+  scale: 0;
+  border-radius: 5px;
+  transition: .4s ease-in-out;
+}
+
+.radio-input .plus2 {
+  position: relative;
+  width: 1.3em;
+  height: 0.2em;
+  background-color: rgb(244,214,3);
+  transform: rotate(90deg);
+  border-radius: 5px;
+  transition: .4s ease-in-out;
+}
+
+.radio-input input:checked {
+  box-shadow: none;
+}
+
+.radio-input input:checked + .plus1 {
+  transform: rotate(180deg);
+  scale: 1;
+}
+
+
+.ppp{
+  color: black;
+  display: inline;
+  }
