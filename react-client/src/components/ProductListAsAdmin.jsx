@@ -11,11 +11,10 @@ const ProductsListasadmin = (props) => {
                 <img
                   class="img"
                   src={e.imageUrl}
-                  onClick={() => props.detail(e)}
                 />
               </div>
               <span> {e.name}</span>
-              <p class="job"> {e.price}</p>
+              <p class="job"> {e.price}DT</p>
               <button
                 onClick={() => {
                   props.setElement(e);
@@ -23,15 +22,16 @@ const ProductsListasadmin = (props) => {
                  
                 }}
               >
-                update
+                UPDATE
               </button>
               <button
                 onClick={() => {
                   props.deleteProduct(e);
                 }}
               >
-                delete
+                DELETE
               </button>
+              
             </div>
           );
         })}
